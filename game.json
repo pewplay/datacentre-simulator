@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Datacentre Simulator",
+  "description": "Keep a creaky cloud provider online by placing patch cables that bounce data packets into failing connections, free in your browser.",
+  "about": "You run the night shift at Rickety Cloud Co., where the servers are old and the regions keep falling over. When a region goes down you step inside and fix it by hand: streams of data packets fly across the room, and every connection needs a steady supply before its ping climbs into the red.\n\nYour only tool is a handful of patch cables. Place them in the packet streams and angle them so packets bounce straight into the connections. Each repair adds more connections, faster packets and tighter timeouts, and when you run out of cables the oldest one gets recycled, so every placement counts.\n\nOriginally created by Alan Reed & Mike Smith for js13kGames 2018.",
+  "howToPlay": "When a region on the overview flashes red, click or tap it to start repairs. Place patch cables so the flying packets bounce into every connection before its ping maxes out. Keep all connections green for a few seconds to repair the region, then survive the next failure; one timed-out connection takes the whole datacentre offline.",
+  "controls": [
+    { "input": "Click / Tap", "action": "Place a patch cable" },
+    { "input": "Drag before releasing", "action": "Aim the cable in the drag direction" },
+    { "input": "Mouse wheel / Q, E", "action": "Rotate the cable preview" },
+    { "input": "Enter / Space", "action": "Start the game or open the failed region" }
+  ],
+  "tips": [
+    "Put each cable in a busy packet stream rather than near the connection, so one bounce covers the whole stream.",
+    "A cable reflects packets like a mirror, so aim it halfway between the incoming stream and the connection.",
+    "Watch the ping labels: a connection turning yellow or orange needs packets right now.",
+    "You get only a few cables per repair and the oldest one is reused, so avoid wasting placements."
+  ],
+  "faq": [
+    { "question": "Is Datacentre Simulator free to play?", "answer": "Yes, it is completely free and runs in your browser with nothing to install." },
+    { "question": "Can I play on a phone or tablet?", "answer": "Yes. Tap to place a cable and drag before lifting your finger to aim it; the play field adapts to portrait and landscape screens." },
+    { "question": "What happens when I run out of patch cables?", "answer": "Placing another cable removes your oldest one, so you can keep adjusting the layout as packet streams change." }
+  ],
+  "category": "Puzzle",
+  "tags": ["physics", "bounce", "simulation", "timing", "js13k"],
+  "author": "Alan Reed & Mike Smith",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-10-01",
+  "draft": false
+}
